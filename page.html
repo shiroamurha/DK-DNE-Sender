@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html data-mantine-color-scheme="light" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no" name="viewport"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link data-precedence="next" href="/_next/static/css/339b0c4ff8da22e5.css" rel="stylesheet"/>
+  <link data-precedence="next" href="/_next/static/css/79aaf488aee8dcb6.css" rel="stylesheet"/>
+  <link data-precedence="next" href="/_next/static/css/691860a3d066a1c1.css" rel="stylesheet"/>
+  <link data-precedence="next" href="/_next/static/css/4c22f7092ae88679.css" rel="stylesheet"/>
+  <link data-precedence="next" href="/_next/static/css/5a073fcc5c9f0063.css" rel="stylesheet"/>
+  <link as="script" fetchpriority="low" href="/_next/static/chunks/webpack-35913b7a50cb2556.js" rel="preload"/>
+  <script async="" src="/_next/static/chunks/fd9d1056-4609df001950b5d6.js">
+  </script>
+  <script async="" src="/_next/static/chunks/2117-e2405fe06727a2fd.js">
+  </script>
+  <script async="" src="/_next/static/chunks/main-app-1033a728aa28fe33.js">
+  </script>
+  <link href="/favicon.ico" rel="shortcut icon"/>
+  <title>
+   DK Carteiras
+  </title>
+  <meta content="Gerenciador de carteiras estudantis" name="description"/>
+  <meta name="next-size-adjust"/>
+  <script data-mantine-script="true">
+   try {
+  var _colorScheme = window.localStorage.getItem("mantine-color-scheme-value");
+  var colorScheme = _colorScheme === "light" || _colorScheme === "dark" || _colorScheme === "auto" ? _colorScheme : "light";
+  var computedColorScheme = colorScheme !== "auto" ? colorScheme : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-mantine-color-scheme", computedColorScheme);
+} catch (e) {}
+  </script>
+  <script nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js">
+  </script>
+  <link as="font" crossorigin="" href="/_next/static/media/e4af272ccee01ff0-s.p.woff2" rel="preload" type="font/woff2"/>
+ </head>
+ <body class="__className_f367f3" style="background:#eee">
+  <!--$-->
+  <!--/$-->
+  <style data-mantine-styles="true">
+   :root{--mantine-primary-color-filled: var(--mantine-color-violet-filled);--mantine-primary-color-filled-hover: var(--mantine-color-violet-filled-hover);--mantine-primary-color-light: var(--mantine-color-violet-light);--mantine-primary-color-light-hover: var(--mantine-color-violet-light-hover);--mantine-primary-color-light-color: var(--mantine-color-violet-light-color);--mantine-primary-color-0: var(--mantine-color-violet-0);--mantine-primary-color-1: var(--mantine-color-violet-1);--mantine-primary-color-2: var(--mantine-color-violet-2);--mantine-primary-color-3: var(--mantine-color-violet-3);--mantine-primary-color-4: var(--mantine-color-violet-4);--mantine-primary-color-5: var(--mantine-color-violet-5);--mantine-primary-color-6: var(--mantine-color-violet-6);--mantine-primary-color-7: var(--mantine-color-violet-7);--mantine-primary-color-8: var(--mantine-color-violet-8);--mantine-primary-color-9: var(--mantine-color-violet-9);--mantine-color-violet-0: #f3e8fd;--mantine-color-violet-1: #e0cffe;--mantine-color-violet-2: #c9a9fc;--mantine-color-violet-3: #b387f9;--mantine-color-violet-4: #9a63f4;--mantine-color-violet-5: #8250ee;--mantine-color-violet-6: #6a3ed9;--mantine-color-violet-7: #673ab7;--mantine-color-violet-8: #4b0ba6;--mantine-color-violet-9: #3a007d;}:root[data-mantine-color-scheme="dark"]{--mantine-color-anchor: var(--mantine-color-violet-4);--mantine-color-violet-light: rgba(106, 62, 217, 0.15);--mantine-color-violet-light-hover: rgba(106, 62, 217, 0.2);--mantine-color-violet-outline-hover: rgba(154, 99, 244, 0.05);}:root[data-mantine-color-scheme="light"]{--mantine-color-anchor: var(--mantine-color-violet-6);--mantine-color-violet-light: rgba(106, 62, 217, 0.1);--mantine-color-violet-light-hover: rgba(106, 62, 217, 0.12);--mantine-color-violet-outline-hover: rgba(106, 62, 217, 0.05);}
+  </style>
+  <style data-mantine-styles="classes">
+   @media (max-width: 35.99375em) {.mantine-visible-from-xs {display: none !important;}}@media (min-width: 36em) {.mantine-hidden-from-xs {display: none !important;}}@media (max-width: 47.99375em) {.mantine-visible-from-sm {display: none !important;}}@media (min-width: 48em) {.mantine-hidden-from-sm {display: none !important;}}@media (max-width: 61.99375em) {.mantine-visible-from-md {display: none !important;}}@media (min-width: 62em) {.mantine-hidden-from-md {display: none !important;}}@media (max-width: 74.99375em) {.mantine-visible-from-lg {display: none !important;}}@media (min-width: 75em) {.mantine-hidden-from-lg {display: none !important;}}@media (max-width: 87.99375em) {.mantine-visible-from-xl {display: none !important;}}@media (min-width: 88em) {.mantine-hidden-from-xl {display: none !important;}}
+  </style>
+  <div class="flex flex-col h-screen">
+   <header class="flex justify-between bg-violet-700 items-center px-4 sticky top-0 h-14 z-10">
+    <a class="no-underline" href="/dashboard">
+     <div class="text-white flex gap-2 items-center">
+      <svg class="tabler-icon tabler-icon-id w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z">
+       </path>
+       <path d="M9 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0">
+       </path>
+       <path d="M15 8l2 0">
+       </path>
+       <path d="M15 12l2 0">
+       </path>
+       <path d="M7 16l10 0">
+       </path>
+      </svg>
+      <h3 class="text-white">
+       DK Carteiras
+      </h3>
+     </div>
+    </a>
+    <button aria-controls="mantine-47g2tojpr-dropdown" aria-expanded="false" aria-haspopup="menu" class="mantine-focus-auto mantine-active !rounded-full !w-9 !h-9 !p-0 m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root" data-variant="white" id="mantine-47g2tojpr-target" style="--button-bg:var(--mantine-color-white);--button-hover:rgba(252, 252, 252, 1);--button-color:var(--mantine-color-violet-filled);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+     <span class="m_80f1301b mantine-Button-inner">
+      <span class="m_811560b9 mantine-Button-label">
+       <span>
+        D
+       </span>
+      </span>
+     </span>
+    </button>
+   </header>
+   <div class="p-3 bg-white pl-5 m_8b3717df mantine-Breadcrumbs-root">
+    <a aria-label="Go to dashboard" class="mantine-focus-auto m_849cf0da m_f678d540 mantine-Breadcrumbs-breadcrumb capitalize m_b6d8b162 mantine-Text-root mantine-Anchor-root" data-size="sm" data-underline="hover" href="/dashboard" style="--text-fz:var(--mantine-font-size-sm);--text-lh:var(--mantine-line-height-sm)">
+     <svg class="tabler-icon tabler-icon-home h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 12l-2 0l9 -9l9 9l-2 0">
+      </path>
+      <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7">
+      </path>
+      <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6">
+      </path>
+     </svg>
+    </a>
+    <div class="m_3b8f2208 mantine-Breadcrumbs-separator">
+     /
+    </div>
+    <a aria-label="Go to carteiras" class="mantine-focus-auto m_849cf0da m_f678d540 mantine-Breadcrumbs-breadcrumb capitalize m_b6d8b162 mantine-Text-root mantine-Anchor-root" data-size="sm" data-underline="hover" href="/dashboard/carteiras" style="--text-fz:var(--mantine-font-size-sm);--text-lh:var(--mantine-line-height-sm)">
+     carteiras
+    </a>
+    <div class="m_3b8f2208 mantine-Breadcrumbs-separator">
+     /
+    </div>
+    <a aria-label="Go to dce_ifrs_restinga" class="mantine-focus-auto m_849cf0da m_f678d540 mantine-Breadcrumbs-breadcrumb capitalize m_b6d8b162 mantine-Text-root mantine-Anchor-root" data-size="sm" data-underline="hover" href="/dashboard/carteiras/dce_ifrs_restinga" style="--text-fz:var(--mantine-font-size-sm);--text-lh:var(--mantine-line-height-sm)">
+     dce_ifrs_restinga
+    </a>
+   </div>
+   <main class="flex-1 p-5 bg-neutral-50">
+    <!--$-->
+    <!--/$-->
+    <div>
+     <h3 class="mb-4 m_8a5d1357 mantine-Title-root" data-order="3" style="--title-fw:var(--mantine-h3-font-weight);--title-lh:var(--mantine-h3-line-height);--title-fz:var(--mantine-h3-font-size)">
+      DCE IFRS Restinga
+      <!-- -->
+      -
+      <!-- -->
+      Diretório Central de Estudantes Livre - Sarah Domingues do IFRS Restinga
+      <!-- -->
+      (
+      <a class="mantine-focus-auto m_849cf0da m_b6d8b162 mantine-Text-root mantine-Anchor-root" data-underline="hover" href="https://meiaentradaestudantil.com.br/dce_ifrs_restinga">
+       Visitar site
+      </a>
+      )
+     </h3>
+     <div class="m_6d731127 mantine-Stack-root" style="--stack-gap:var(--mantine-spacing-md);--stack-align:stretch;--stack-justify:flex-start">
+      <div class="m_1b7284a3 mantine-Paper-root" data-with-border="true" style="--paper-shadow:var(--mantine-shadow-md);padding:var(--mantine-spacing-md)">
+       <div class="m_4081bf90 mantine-Group-root" style="--group-gap:var(--mantine-spacing-md);--group-align:center;--group-justify:space-between;--group-wrap:wrap">
+        <button class="mantine-focus-auto mantine-active m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root" data-variant="subtle" data-with-left-section="true" style="--button-bg: transparent; --button-hover: var(--mantine-color-violet-light-hover); --button-color: var(--mantine-color-violet-light-color); --button-bd: calc(0.0625rem * var(--mantine-scale)) solid transparent;" type="button">
+         <span class="m_80f1301b mantine-Button-inner">
+          <span class="m_a74036a mantine-Button-section" data-position="left">
+           <svg class="tabler-icon tabler-icon-file-alert" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 3v4a1 1 0 0 0 1 1h4">
+            </path>
+            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z">
+            </path>
+            <path d="M12 17l.01 0">
+            </path>
+            <path d="M12 11l0 3">
+            </path>
+           </svg>
+          </span>
+          <span class="m_811560b9 mantine-Button-label">
+           Cadastradas
+          </span>
+         </span>
+        </button>
+        <button class="mantine-focus-auto mantine-active m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root" data-variant="subtle" data-with-left-section="true" style="--button-bg:transparent;--button-hover:var(--mantine-color-violet-light-hover);--button-color:var(--mantine-color-violet-light-color);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+         <span class="m_80f1301b mantine-Button-inner">
+          <span class="m_a74036a mantine-Button-section" data-position="left">
+           <svg class="tabler-icon tabler-icon-checkup-list" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
+            </path>
+            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
+            </path>
+            <path d="M9 14h.01">
+            </path>
+            <path d="M9 17h.01">
+            </path>
+            <path d="M12 16l1 1l3 -3">
+            </path>
+           </svg>
+          </span>
+          <span class="m_811560b9 mantine-Button-label">
+           Autorizadas
+          </span>
+         </span>
+        </button>
+        <button class="mantine-focus-auto mantine-active m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root" data-variant="filled" data-with-left-section="true" style="--button-bg: var(--mantine-color-violet-filled); --button-hover: var(--mantine-color-violet-filled-hover); --button-color: var(--mantine-color-white); --button-bd: calc(0.0625rem * var(--mantine-scale)) solid transparent;" type="button">
+         <span class="m_80f1301b mantine-Button-inner">
+          <span class="m_a74036a mantine-Button-section" data-position="left">
+           <svg class="tabler-icon tabler-icon-settings" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+            </path>
+            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0">
+            </path>
+           </svg>
+          </span>
+          <span class="m_811560b9 mantine-Button-label">
+           Em Produção
+          </span>
+         </span>
+        </button>
+        <button class="mantine-focus-auto mantine-active m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root" data-variant="subtle" data-with-left-section="true" style="--button-bg:transparent;--button-hover:var(--mantine-color-violet-light-hover);--button-color:var(--mantine-color-violet-light-color);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+         <span class="m_80f1301b mantine-Button-inner">
+          <span class="m_a74036a mantine-Button-section" data-position="left">
+           <svg class="tabler-icon tabler-icon-mail-forward" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
+            </path>
+            <path d="M3 6l9 6l9 -6">
+            </path>
+            <path d="M15 18h6">
+            </path>
+            <path d="M18 15l3 3l-3 3">
+            </path>
+           </svg>
+          </span>
+          <span class="m_811560b9 mantine-Button-label">
+           Enviadas
+          </span>
+         </span>
+        </button>
+        <button class="mantine-focus-auto mantine-active m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root" data-variant="subtle" data-with-left-section="true" style="--button-bg:transparent;--button-hover:var(--mantine-color-violet-light-hover);--button-color:var(--mantine-color-violet-light-color);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+         <span class="m_80f1301b mantine-Button-inner">
+          <span class="m_a74036a mantine-Button-section" data-position="left">
+           <svg class="tabler-icon tabler-icon-checks" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 12l5 5l10 -10">
+            </path>
+            <path d="M2 12l5 5m5 -5l5 -5">
+            </path>
+           </svg>
+          </span>
+          <span class="m_811560b9 mantine-Button-label">
+           Entregues
+          </span>
+         </span>
+        </button>
+       </div>
+      </div>
+      <div class="mrt-table-paper MRT_TablePaper-module_root__q0v5L m_1b7284a3 mantine-Paper-root" data-with-border="true" style="--paper-shadow:var(--mantine-shadow-xs)">
+       <div class="common-styles-module_common-toolbar-styles__DnjR8 MRT_TopToolbar-module_root__r4-V9">
+        <div class="MRT_TopToolbar-module_actions-container__-uL0u m_8bffd616 mantine-Flex-root __m__-R7bdd7rqfnnsvekq">
+         <span>
+         </span>
+         <div class="m_8bffd616 mantine-Flex-root __m__-R3mnbdd7rqfnnsvekq" style="justify-content:end;flex-wrap:wrap-reverse">
+          <div aria-hidden="true" class="MRT_GlobalFilterTextInput-module_collapse__v311d" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+           <div class="mrt-global-filter-text-input MRT_GlobalFilterTextInput-module_root__Xmcpv m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="filled" style="z-index:3;margin-inline:mx;margin-top:0rem">
+            <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="filled" data-with-left-section="true">
+             <div class="m_82577fc2 mantine-Input-section mantine-TextInput-section" data-position="left">
+              <svg class="tabler-icon tabler-icon-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0">
+               </path>
+               <path d="M21 21l-6 -6">
+               </path>
+              </svg>
+             </div>
+             <input aria-invalid="false" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="filled" id="mantine-bfcigv0oq" placeholder="Search" value=""/>
+            </div>
+           </div>
+          </div>
+          <div class="mrt-toolbar-internal-buttons MRT_ToolbarInternalButtons-module_root__NKoUG m_8bffd616 mantine-Flex-root __m__-Rlnmnbdd7rqfnnsvekq">
+           <button aria-label="Show/Hide search" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="lg" data-variant="subtle" style="--ai-size:var(--ai-size-lg);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+            <span class="m_8d3afb97 mantine-ActionIcon-icon">
+             <svg class="tabler-icon tabler-icon-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0">
+              </path>
+              <path d="M21 21l-6 -6">
+              </path>
+             </svg>
+            </span>
+           </button>
+           <button aria-label="Show/Hide filters" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="lg" data-variant="subtle" style="--ai-size:var(--ai-size-lg);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+            <span class="m_8d3afb97 mantine-ActionIcon-icon">
+             <svg class="tabler-icon tabler-icon-filter" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z">
+              </path>
+             </svg>
+            </span>
+           </button>
+           <button aria-controls="mantine-iy3lyic81-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Show/Hide columns" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="lg" data-variant="subtle" id="mantine-iy3lyic81-target" style="--ai-size:var(--ai-size-lg);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+            <span class="m_8d3afb97 mantine-ActionIcon-icon">
+             <svg class="tabler-icon tabler-icon-columns" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6l5.5 0">
+              </path>
+              <path d="M4 10l5.5 0">
+              </path>
+              <path d="M4 14l5.5 0">
+              </path>
+              <path d="M4 18l5.5 0">
+              </path>
+              <path d="M14.5 6l5.5 0">
+              </path>
+              <path d="M14.5 10l5.5 0">
+              </path>
+              <path d="M14.5 14l5.5 0">
+              </path>
+              <path d="M14.5 18l5.5 0">
+              </path>
+             </svg>
+            </span>
+           </button>
+           <button aria-label="Toggle density" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="lg" data-variant="subtle" style="--ai-size:var(--ai-size-lg);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+            <span class="m_8d3afb97 mantine-ActionIcon-icon">
+             <svg class="tabler-icon tabler-icon-baseline-density-medium" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20h16">
+              </path>
+              <path d="M4 12h16">
+              </path>
+              <path d="M4 4h16">
+              </path>
+             </svg>
+            </span>
+           </button>
+           <button aria-label="Toggle full screen" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="lg" data-variant="subtle" style="--ai-size:var(--ai-size-lg);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+            <span class="m_8d3afb97 mantine-ActionIcon-icon">
+             <svg class="tabler-icon tabler-icon-maximize" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 8v-2a2 2 0 0 1 2 -2h2">
+              </path>
+              <path d="M4 16v2a2 2 0 0 0 2 2h2">
+              </path>
+              <path d="M16 4h2a2 2 0 0 1 2 2v2">
+              </path>
+              <path d="M16 20h2a2 2 0 0 0 2 -2v-2">
+              </path>
+             </svg>
+            </span>
+           </button>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="MRT_ProgressBar-module_collapse__rOLJH MRT_ProgressBar-module_collapse-top__oCi0h" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+         <div aria-busy="true" class="m_db6d6462 mantine-Progress-root" radius="0" style="--progress-radius:0rem">
+          <div aria-label="Loading" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" class="m_2242eb65 mantine-Progress-section" data-animated="true" data-striped="true" role="progressbar" style="--progress-section-width:100%;--progress-section-color:var(--mantine-color-violet-filled)">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mrt-table-container MRT_TableContainer-module_root__JIsGB" style="--mrt-top-toolbar-height: 112;">
+        <div class="m_6e45937b mantine-LoadingOverlay-root" style="--lo-z-index:2">
+         <span class="m_b34414df m_e8eb006c mantine-LoadingOverlay-loader m_5ae2e3c mantine-Loader-root">
+         </span>
+         <div class="m_df587f17 mantine-LoadingOverlay-overlay m_9814e45f mantine-Overlay-root mantine-dark-hidden" style="--overlay-bg:rgba(255, 255, 255, 0.75);--overlay-z-index:200">
+         </div>
+         <div class="m_df587f17 mantine-LoadingOverlay-overlay m_9814e45f mantine-Overlay-root mantine-light-hidden" style="--overlay-bg:rgba(59, 59, 59, 0.75);--overlay-z-index:200">
+         </div>
+        </div>
+        <table class="mrt-table MRT_Table-module_root__ms2uS m_b23fa0ef mantine-Table-table" style="--table-horizontal-spacing:var(--mantine-spacing-md);--table-vertical-spacing:var(--mantine-spacing-md);--header-mrt_row_select-size:60;--col-mrt_row_select-size:60;--header-nome-size:180;--col-nome-size:180;--header-cpf-size:180;--col-cpf-size:180;--header-matricula-size:180;--col-matricula-size:180;--header-curso-size:180;--col-curso-size:180;--header-cidade-size:180;--col-cidade-size:180;--header-instituicao-size:180;--col-instituicao-size:180;--header-local_retirada-size:180;--col-local_retirada-size:180;--header-created_at-size:180;--col-created_at-size:180">
+         <thead class="m_b242d975 mantine-Table-thead MRT_TableHead-module_root__j9NkO MRT_TableHead-module_root-table-row-group__d9FO4" style="position:relative">
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableHeadRow-module_root__hUKv4" data-hover="true" data-with-row-border="true">
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a" colspan="1" data-index="0" style="min-width:max(calc(var(--header-mrt_row_select-size) * 1px), 40px);width:calc(var(--header-mrt_row_select-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rq6nbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr m_8bffd616 mantine-Flex-root __m__-R6qq6nbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:1.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqq6nbdddd7rqfnnsvekq">
+               <span class="">
+                <div class="m_bf2d988c mantine-Checkbox-root m_5f75b09e mantine-Checkbox-root" data-label-position="right" data-size="md" style="--checkbox-size:var(--checkbox-size-md);--checkbox-color:var(--mantine-color-violet-filled);--label-fz:var(--mantine-font-size-md);--label-lh:var(--label-lh-md)">
+                 <div class="m_5f6e695e mantine-Checkbox-body">
+                  <div class="m_26062bec mantine-Checkbox-inner" data-label-position="right">
+                   <input aria-label="Toggle select all" class="mantine-focus-auto m_26063560 mantine-Checkbox-input" disabled="" id="mantine-5btmlw7th" type="checkbox"/>
+                   <svg aria-hidden="true" class="m_bf295423 mantine-Checkbox-icon" fill="none" viewbox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M4 4.586L1.707 2.293A1 1 0 1 0 .293 3.707l3 3a.997.997 0 0 0 1.414 0l5-5A1 1 0 1 0 8.293.293L4 4.586z" fill="currentColor" fill-rule="evenodd">
+                    </path>
+                   </svg>
+                  </div>
+                  <div class="m_d3ea56bb mantine-Checkbox-labelWrapper" data-disabled="true">
+                  </div>
+                 </div>
+                </div>
+               </span>
+              </div>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqq6nbdddd7rqfnnsvekq">
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="1" style="min-width:max(calc(var(--header-nome-size) * 1px), 40px);width:calc(var(--header-nome-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rqanbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qqanbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqqanbdddd7rqfnnsvekq">
+               Nome completo
+              </div>
+              <button aria-label="Sort by Nome completo descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqqanbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-7lkzspauk-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-7lkzspauk-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbaanbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mraanbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by Nome completo" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-vrlaxaptc" placeholder="Filter by Nome completo" title="Filter by Nome completo" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="2" style="min-width:max(calc(var(--header-cpf-size) * 1px), 40px);width:calc(var(--header-cpf-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rqenbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qqenbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqqenbdddd7rqfnnsvekq">
+               CPF
+              </div>
+              <button aria-label="Sort by CPF descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqqenbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-jybnkm3hp-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-jybnkm3hp-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbaenbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mraenbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by CPF" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-pap3ncimm" placeholder="Filter by CPF" title="Filter by CPF" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="3" style="min-width:max(calc(var(--header-matricula-size) * 1px), 40px);width:calc(var(--header-matricula-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rqinbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qqinbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqqinbdddd7rqfnnsvekq">
+               Matrícula
+              </div>
+              <button aria-label="Sort by Matrícula descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqqinbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-9k30lx5aq-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-9k30lx5aq-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbainbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mrainbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by Matrícula" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-3fvhf0lyl" placeholder="Filter by Matrícula" title="Filter by Matrícula" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="4" style="min-width:max(calc(var(--header-curso-size) * 1px), 40px);width:calc(var(--header-curso-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rqmnbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qqmnbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqqmnbdddd7rqfnnsvekq">
+               Curso
+              </div>
+              <button aria-label="Sort by Curso descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqqmnbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-690zewzxk-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-690zewzxk-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbamnbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mramnbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by Curso" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-aj0t7voy0" placeholder="Filter by Curso" title="Filter by Curso" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="5" style="min-width:max(calc(var(--header-cidade-size) * 1px), 40px);width:calc(var(--header-cidade-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rqqnbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qqqnbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqqqnbdddd7rqfnnsvekq">
+               Cidade
+              </div>
+              <button aria-label="Sort by Cidade descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqqqnbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-6w2i8wj7a-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-6w2i8wj7a-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbaqnbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mraqnbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by Cidade" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-g49jugjoi" placeholder="Filter by Cidade" title="Filter by Cidade" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="6" style="min-width:max(calc(var(--header-instituicao-size) * 1px), 40px);width:calc(var(--header-instituicao-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rqunbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qqunbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqqunbdddd7rqfnnsvekq">
+               Instituição
+              </div>
+              <button aria-label="Sort by Instituição descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqqunbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-dfmopmmna-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-dfmopmmna-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbaunbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mraunbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by Instituição" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-4b265qdni" placeholder="Filter by Instituição" title="Filter by Instituição" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="7" style="min-width:max(calc(var(--header-local_retirada-size) * 1px), 40px);width:calc(var(--header-local_retirada-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rr2nbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qr2nbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqr2nbdddd7rqfnnsvekq">
+               Local de Retirada
+              </div>
+              <button aria-label="Sort by Local de Retirada descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqr2nbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-bq2671znc-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-bq2671znc-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbb2nbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mrb2nbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by Local de Retirada" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-ofb1v3pdd" placeholder="Filter by Local de Retirada" title="Filter by Local de Retirada" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+           <th align="left" class="m_4e7aa4f3 mantine-Table-th MRT_TableHeadCell-module_root__6y50a MRT_TableHeadCell-module_root-no-select__BEOVU" colspan="1" data-index="8" style="min-width:max(calc(var(--header-created_at-size) * 1px), 40px);width:calc(var(--header-created_at-size) * 1px)">
+            <div class="mrt-table-head-cell-content MRT_TableHeadCell-module_content__-pzSK m_8bffd616 mantine-Flex-root __m__-Rr6nbdddd7rqfnnsvekq">
+             <div class="mrt-table-head-cell-labels MRT_TableHeadCell-module_labels__oiMSr MRT_TableHeadCell-module_labels-sortable__tyuLr MRT_TableHeadCell-module_labels-data__PvFGO m_8bffd616 mantine-Flex-root __m__-R6qr6nbdddd7rqfnnsvekq" style="--mrt-table-head-cell-labels-padding-left:2.75">
+              <div class="mrt-table-head-cell-content-wrapper MRT_TableHeadCell-module_content-wrapper__py6aJ MRT_TableHeadCell-module_content-wrapper-hidden-overflow__QY40r MRT_TableHeadCell-module_content-wrapper-nowrap__-4aIg m_8bffd616 mantine-Flex-root __m__-R1mmqr6nbdddd7rqfnnsvekq">
+               Cadastrada em
+              </div>
+              <button aria-label="Sort by Cadastrada em descending" class="mantine-focus-auto mantine-active mrt-table-head-sort-button MRT_TableHeadCellSortLabel-module_sort-icon__zs1xA m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" style="--ai-color:var(--mantine-color-white)" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-arrows-sort" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M3 9l4 -4l4 4m-4 -4v14">
+                 </path>
+                 <path d="M21 15l-4 4l-4 -4m4 4v-14">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+             <div class="mrt-table-head-cell-content-actions MRT_TableHeadCell-module_content-actions__utxbm m_8bffd616 mantine-Flex-root __m__-Raqr6nbdddd7rqfnnsvekq">
+              <button aria-controls="mantine-wly6zdlyp-dropdown" aria-expanded="false" aria-haspopup="menu" aria-label="Column Actions" class="mantine-focus-auto mantine-active m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-size="sm" data-variant="subtle" id="mantine-wly6zdlyp-target" style="--ai-size:var(--ai-size-sm);--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+               <span class="m_8d3afb97 mantine-ActionIcon-icon">
+                <svg class="tabler-icon tabler-icon-dots-vertical" fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                 <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0">
+                 </path>
+                </svg>
+               </span>
+              </button>
+             </div>
+            </div>
+            <div aria-hidden="true" class="" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+             <div class="m_8bffd616 mantine-Flex-root __m__-Rbb6nbdddd7rqfnnsvekq" style="flex-direction:column">
+              <div class="m_8bffd616 mantine-Flex-root __m__-R1mrb6nbdddd7rqfnnsvekq" style="align-items:flex-end">
+               <div class="mrt-filter-text-input MRT_FilterTextInput-module_root__Ss8Ql MRT_FilterTextInput-module_not-filter-chip__u8b1y m_46b77525 mantine-InputWrapper-root mantine-TextInput-root" data-variant="unstyled" style="margin-top:0rem">
+                <div class="m_6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="unstyled">
+                 <input aria-invalid="false" aria-label="Filter by Cadastrada em" class="m_8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="unstyled" id="mantine-f0k5nfarj" placeholder="Filter by Cadastrada em" title="Filter by Cadastrada em" value=""/>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </th>
+          </tr>
+         </thead>
+         <tbody class="m_b2404537 mantine-Table-tbody MRT_TableBody-module_root__kGhRy">
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="0" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(4rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(4.75rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.9375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.5rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.8125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(3.9375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(11.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="1" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.4375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height:calc(1.25rem * var(--mantine-scale));--skeleton-width:calc(6.25rem * var(--mantine-scale))">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.8125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.75rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.5rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(11.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="2" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height:calc(1.25rem * var(--mantine-scale));--skeleton-width:calc(6.25rem * var(--mantine-scale))">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.75rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.9375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="3" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.4375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(4.5625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.4375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.5625rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="4" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(4.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.8125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.3125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(11.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(11.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.3125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.4375rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="5" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.6875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.5625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(4.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="6" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.75rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.25rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.4375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.75rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.6875rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="7" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.5625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.5625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.4375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.375rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="8" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(8.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(3.9375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.8125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(5.125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(4.625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(11.0625rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+          <tr class="m_4e7aa4fd mantine-Table-tr MRT_TableBodyRow-module_root__2c3D4" data-hover="true" data-index="9" data-with-row-border="true" style="cursor:pointer">
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi" data-index="0" data-last-row="true" style="min-width:max(calc(var(--col-mrt_row_select-size) * 1px), 40px);width:calc(var(--col-mrt_row_select-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(1.875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="1" data-last-row="true" style="min-width:max(calc(var(--col-nome-size) * 1px), 40px);width:calc(var(--col-nome-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(11.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="2" data-last-row="true" style="min-width:max(calc(var(--col-cpf-size) * 1px), 40px);width:calc(var(--col-cpf-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(7.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="3" data-last-row="true" style="min-width:max(calc(var(--col-matricula-size) * 1px), 40px);width:calc(var(--col-matricula-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(4.5625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="4" data-last-row="true" style="min-width:max(calc(var(--col-curso-size) * 1px), 40px);width:calc(var(--col-curso-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.3125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="5" data-last-row="true" style="min-width:max(calc(var(--col-cidade-size) * 1px), 40px);width:calc(var(--col-cidade-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(3.8125rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="6" data-last-row="true" style="min-width:max(calc(var(--col-instituicao-size) * 1px), 40px);width:calc(var(--col-instituicao-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(6.9375rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="7" data-last-row="true" style="min-width:max(calc(var(--col-local_retirada-size) * 1px), 40px);width:calc(var(--col-local_retirada-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(10.625rem * var(--mantine-scale));">
+            </div>
+           </td>
+           <td class="m_4e7aa4ef mantine-Table-td MRT_TableBodyCell-module_root__Wf-zi MRT_TableBodyCell-module_root-data-col__HHcxc" data-index="8" data-last-row="true" style="min-width:max(calc(var(--col-created_at-size) * 1px), 40px);width:calc(var(--col-created_at-size) * 1px);--mrt-cell-align:left">
+            <div class="m_18320242 mantine-Skeleton-root" data-animate="true" data-visible="true" style="--skeleton-height: calc(1.25rem * var(--mantine-scale)); --skeleton-width: calc(9.1875rem * var(--mantine-scale));">
+            </div>
+           </td>
+          </tr>
+         </tbody>
+         <tfoot class="mantine-Table-tfoot MRT_TableFooter-module_root__-JXpw">
+         </tfoot>
+        </table>
+       </div>
+       <div class="mrt-bottom-toolbar MRT_BottomToolbar-module_root__VDeWo common-styles-module_common-toolbar-styles__DnjR8">
+        <div aria-hidden="true" class="MRT_ProgressBar-module_collapse__rOLJH" inert="" style="box-sizing:border-box;opacity:0;transition:opacity 200ms ease;height:0;overflow:hidden">
+         <div aria-busy="true" class="m_db6d6462 mantine-Progress-root" radius="0" style="--progress-radius:0rem">
+          <div aria-label="Loading" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" class="m_2242eb65 mantine-Progress-section" data-animated="true" data-striped="true" role="progressbar" style="--progress-section-width:100%;--progress-section-color:var(--mantine-color-violet-filled)">
+          </div>
+         </div>
+        </div>
+        <div class="MRT_BottomToolbar-module_custom-toolbar-container__XcDRF">
+         <span>
+         </span>
+         <div class="MRT_BottomToolbar-module_paginator-container__A3eWY">
+          <div class="mrt-table-pagination MRT_TablePagination-module_root__yZ8pm">
+           <div class="m_4081bf90 mantine-Group-root" style="--group-gap:var(--mantine-spacing-xs);--group-align:center;--group-justify:flex-start;--group-wrap:wrap">
+            <p class="mantine-focus-auto m_b6d8b162 mantine-Text-root" id="rpp-label">
+             Rows per page
+            </p>
+            <div class="MRT_TablePagination-module_pagesize__-vmTn m_46b77525 mantine-InputWrapper-root mantine-Select-root">
+             <div class="m_6c018570 mantine-Input-wrapper mantine-Select-wrapper" data-pointer="true" data-variant="default" data-with-right-section="true" style="--input-right-section-pointer-events:none">
+              <input aria-haspopup="listbox" aria-invalid="false" aria-labelledby="rpp-label" autocomplete="off" class="m_8fb7ebe7 mantine-Input-input mantine-Select-input" data-variant="default" id="mantine-5wlq0t3va" readonly="" value="10"/>
+              <div class="m_82577fc2 mantine-Input-section mantine-Select-section" data-position="right">
+               <svg class="m_2943220b mantine-ComboboxChevron-chevron" data-combobox-chevron="true" fill="none" viewbox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M4.93179 5.43179C4.75605 5.60753 4.75605 5.89245 4.93179 6.06819C5.10753 6.24392 5.39245 6.24392 5.56819 6.06819L7.49999 4.13638L9.43179 6.06819C9.60753 6.24392 9.89245 6.24392 10.0682 6.06819C10.2439 5.89245 10.2439 5.60753 10.0682 5.43179L7.81819 3.18179C7.73379 3.0974 7.61933 3.04999 7.49999 3.04999C7.38064 3.04999 7.26618 3.0974 7.18179 3.18179L4.93179 5.43179ZM10.0682 9.56819C10.2439 9.39245 10.2439 9.10753 10.0682 8.93179C9.89245 8.75606 9.60753 8.75606 9.43179 8.93179L7.49999 10.8636L5.56819 8.93179C5.39245 8.75606 5.10753 8.75606 4.93179 8.93179C4.75605 9.10753 4.75605 9.39245 4.93179 9.56819L7.18179 11.8182C7.35753 11.9939 7.64245 11.9939 7.81819 11.8182L10.0682 9.56819Z" fill="currentColor" fill-rule="evenodd">
+                </path>
+               </svg>
+              </div>
+             </div>
+            </div>
+            <input type="hidden" value="10"/>
+           </div>
+           <p class="mantine-focus-auto m_b6d8b162 mantine-Text-root">
+            0-0 of 0
+           </p>
+           <div class="m_4081bf90 mantine-Group-root" style="--group-gap:calc(0.375rem * var(--mantine-scale));--group-align:center;--group-justify:flex-start;--group-wrap:wrap">
+            <button aria-label="Go to previous page" class="mantine-focus-auto m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-disabled="true" data-variant="subtle" disabled="" style="--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+             <span class="m_8d3afb97 mantine-ActionIcon-icon">
+              <svg class="tabler-icon tabler-icon-chevron-left" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M15 6l-6 6l6 6">
+               </path>
+              </svg>
+             </span>
+            </button>
+            <button aria-label="Go to next page" class="mantine-focus-auto m_8d3f4000 mantine-ActionIcon-root m_87cf2631 mantine-UnstyledButton-root" data-disabled="true" data-variant="subtle" disabled="" style="--ai-bg:transparent;--ai-hover:var(--mantine-color-gray-light-hover);--ai-color:var(--mantine-color-gray-light-color);--ai-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent" type="button">
+             <span class="m_8d3afb97 mantine-ActionIcon-icon">
+              <svg class="tabler-icon tabler-icon-chevron-right" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M9 6l6 6l-6 6">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="m_4451eb3a mantine-Center-root">
+       <div class="m_bf2d988c mantine-Checkbox-root m_5f75b09e mantine-Checkbox-root" data-label-position="right" style="--checkbox-color: var(--mantine-color-violet-filled);">
+        <div class="m_5f6e695e mantine-Checkbox-body">
+         <div class="m_26062bec mantine-Checkbox-inner" data-label-position="right">
+          <input class="mantine-focus-auto m_26063560 mantine-Checkbox-input" id="mantine-4uwqhshzh" type="checkbox"/>
+          <svg aria-hidden="true" class="m_bf295423 mantine-Checkbox-icon" fill="none" viewbox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+           <path clip-rule="evenodd" d="M4 4.586L1.707 2.293A1 1 0 1 0 .293 3.707l3 3a.997.997 0 0 0 1.414 0l5-5A1 1 0 1 0 8.293.293L4 4.586z" fill="currentColor" fill-rule="evenodd">
+           </path>
+          </svg>
+         </div>
+         <div class="m_d3ea56bb mantine-Checkbox-labelWrapper">
+          <label class="m_8ee546b8 mantine-Checkbox-label" for="mantine-4uwqhshzh">
+           Imprimir com fundo
+          </label>
+         </div>
+        </div>
+       </div>
+      </div>
+      <button class="mantine-focus-auto mantine-active m_77c9d27d mantine-Button-root m_87cf2631 mantine-UnstyledButton-root" data-with-right-section="true" style="--button-color: var(--mantine-color-white);" type="button">
+       <span class="m_80f1301b mantine-Button-inner">
+        <span class="m_811560b9 mantine-Button-label">
+         BAIXAR TODAS 1 CARTEIRINHAS
+        </span>
+        <span class="m_a74036a mantine-Button-section" data-position="right">
+         <svg class="tabler-icon tabler-icon-download" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2">
+          </path>
+          <path d="M7 11l5 5l5 -5">
+          </path>
+          <path d="M12 4l0 12">
+          </path>
+         </svg>
+        </span>
+       </span>
+      </button>
+     </div>
+    </div>
+   </main>
+  </div>
+  <script crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/exception-autocapture.js?v=1.306.1" type="text/javascript">
+  </script>
+  <script crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/web-vitals.js?v=1.306.1" type="text/javascript">
+  </script>
+  <script crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/surveys.js?v=1.306.1" type="text/javascript">
+  </script>
+  <script crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/dead-clicks-autocapture.js?v=1.306.1" type="text/javascript">
+  </script>
+  <script crossorigin="anonymous" src="https://us-assets.i.posthog.com/static/posthog-recorder.js?v=1.306.1" type="text/javascript">
+  </script>
+  <script crossorigin="anonymous" src="https://us-assets.i.posthog.com/array/phc_7gZpYEz3pwJ325mBE0TR5tHDj2awq3Na4fTDnkFh2KR/config.js" type="text/javascript">
+  </script>
+  <script async="" src="/_next/static/chunks/webpack-35913b7a50cb2556.js">
+  </script>
+  <script>
+   (self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])
+  </script>
+  <script>
+   self.__next_f.push([1,"1:HL[\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/339b0c4ff8da22e5.css\",\"style\"]\n3:HL[\"/_next/static/css/79aaf488aee8dcb6.css\",\"style\"]\n4:HL[\"/_next/static/css/691860a3d066a1c1.css\",\"style\"]\n5:HL[\"/_next/static/css/4c22f7092ae88679.css\",\"style\"]\n6:HL[\"/_next/static/css/5a073fcc5c9f0063.css\",\"style\"]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"7:I[12846,[],\"\"]\n8:I[19107,[],\"ClientPageRoot\"]\n9:I[75698,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"5966\",\"static/chunks/5966-e72dd7888cfb825a.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"1713\",\"static/chunks/1713-2339885fbce94949.js\",\"1388\",\"static/chunks/1388-9b152e0af54bcc56.js\",\"5278\",\"static/chunks/5278-c334678c19bc30c0.js\",\"9983\",\"static/chunks/app/dashboard/(admin)/carteiras/%5BentityUrl%5D/@modalCarteira/page-35ad1de96340fe9b.js\"],\"default\",1]\na:I[4707,[],\"\"]\nc:I[36423,[],\"\"]\n11:I[54914,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"7648\",\"static/chunks/7648-510a0a66e9dde937.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"1388\",\"static/chunks/1388-9b152e0af54bcc56.js\",\"7663\",\"static/chunks/app/dashboard/layout-70d6230cd883484e.js\"],\"default\"]\n12:I[39276,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"8708\",\"static/chunks/4f298cb9-532812d318135373.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"1713\",\"static/chunks/1713-2339885fbce94949.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"6002\",\"static/chunks/6"])
+  </script>
+  <script>
+   self.__next_f.push([1,"002-e47d3bec2b8a6a60.js\",\"8625\",\"static/chunks/8625-a2dcb40883a2cae8.js\",\"1817\",\"static/chunks/app/dashboard/(admin)/carteiras/%5BentityUrl%5D/@tableCarteiras/page-16b53277645045d6.js\"],\"ColorSchemeScript\"]\n13:I[74853,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"1388\",\"static/chunks/1388-9b152e0af54bcc56.js\",\"4537\",\"static/chunks/4537-93391ab7117b7fba.js\",\"3185\",\"static/chunks/app/layout-dff21739b37dac0f.js\"],\"PostHogProvider\"]\n14:I[96735,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"8708\",\"static/chunks/4f298cb9-532812d318135373.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"1713\",\"static/chunks/1713-2339885fbce94949.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"6002\",\"static/chunks/6002-e47d3bec2b8a6a60.js\",\"8625\",\"static/chunks/8625-a2dcb40883a2cae8.js\",\"1817\",\"static/chunks/app/dashboard/(admin)/carteiras/%5BentityUrl%5D/@tableCarteiras/page-16b53277645045d6.js\"],\"MantineProvider\"]\n15:I[28820,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d3429861"])
+  </script>
+  <script>
+   self.__next_f.push([1,"6565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"1388\",\"static/chunks/1388-9b152e0af54bcc56.js\",\"4537\",\"static/chunks/4537-93391ab7117b7fba.js\",\"3185\",\"static/chunks/app/layout-dff21739b37dac0f.js\"],\"Notifications\"]\n16:I[15745,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"1388\",\"static/chunks/1388-9b152e0af54bcc56.js\",\"4537\",\"static/chunks/4537-93391ab7117b7fba.js\",\"3185\",\"static/chunks/app/layout-dff21739b37dac0f.js\"],\"ReactQueryProvider\"]\n17:I[33896,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"1388\",\"static/chunks/1388-9b152e0af54bcc56.js\",\"4537\",\"static/chunks/4537-93391ab7117b7fba.js\",\"3185\",\"static/chunks/app/layout-dff21739b37dac0f.js\"],\"default\"]\n19:I[21667,[\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"6470\",\"static/chunks/app/global-error-8c20aeb116241e05.js\"],\"default\"]\nb:[\"entityUr"])
+  </script>
+  <script>
+   self.__next_f.push([1,"l\",\"dce_ifrs_restinga\",\"d\"]\n1a:[]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"0:[\"$\",\"$L7\",null,{\"buildId\":\"43Hz-2Gcke0_WryEHNNpJ\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"dashboard\",\"carteiras\",\"dce_ifrs_restinga\"],\"initialTree\":[\"\",{\"children\":[\"dashboard\",{\"children\":[\"(admin)\",{\"children\":[\"carteiras\",{\"children\":[[\"entityUrl\",\"dce_ifrs_restinga\",\"d\"],{\"modalCarteira\":[\"__PAGE__\",{\"children\":[\"__PAGE__\",{}]}],\"tableCarteiras\":[\"__PAGE__\",{\"children\":[\"__PAGE__\",{}]}],\"children\":[\"__DEFAULT__\",{}]}]}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"dashboard\",{\"children\":[\"(admin)\",{\"children\":[\"carteiras\",{\"children\":[[\"entityUrl\",\"dce_ifrs_restinga\",\"d\"],{\"modalCarteira\":[\"__PAGE__\",{\"children\":[\"__PAGE__\",{},[[\"$undefined\",[\"$\",\"$L8\",null,{\"props\":{\"params\":{\"entityUrl\":\"dce_ifrs_restinga\"},\"searchParams\":{}},\"Component\":\"$9\"}],null],null],null]},[null,[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"dashboard\",\"children\",\"(admin)\",\"children\",\"carteiras\",\"children\",\"$b\",\"modalCarteira\",\"__PAGE__\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null],\"tableCarteiras\":[\"__PAGE__\",{\"children\":[\"__PAGE__\",{},[[\"$undefined\",\"$Ld\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/5a073fcc5c9f0063.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]]],null],null]},[null,[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"dashboard\",\"children\",\"(admin)\",\"children\",\"carteiras\",\"children\",\"$b\",\"tableCarteiras\",\"__PAGE__\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null],\"children\":[\"__DEFAULT__\",{},[[\"$Le\",\"$Lf\",null],null],null]},[[null,[[\"$\",\"$La\",null,{\"parallelRouterKey\":\"modalCarteira\",\"segmentPath\":[\"children\",\"dashboard\",\"children\",\"(admin)\",\"children\",\"carteiras\",\"children\",\"$b\",\"modalCarteira\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}],[\"$\",\"$La\",null,{\"parallelRouterKey\":\"tableCarteiras\",\"segmentPath\":[\"children\",\"dashboard\",\"children\",\"(admin)\",\"children\",\"carteiras\",\"children\",\"$b\",\"tableCarteiras\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]]],null],null]},[null,[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"dashboard\",\"children\",\"(admin)\",\"children\",\"carteiras\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"dashboard\",\"children\",\"(admin)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"div\",null,{\"className\":\"flex flex-col h-screen\",\"children\":[\"$L10\",[\"$\",\"$L11\",null,{}],[\"$\",\"main\",null,{\"className\":\"flex-1 p-5 bg-neutral-50\",\"children\":[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"dashboard\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]}]]}]],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/339b0c4ff8da22e5.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/79aaf488aee8dcb6.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"2\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/691860a3d066a1c1.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"3\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/4c22f7092ae88679.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"data-mantine-color-scheme\":\"light\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"shortcut icon\",\"href\":\"/favicon.ico\"}],[\"$\",\"meta\",null,{\"name\":\"viewport\",\"content\":\"minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no\"}],[\"$\",\"$L12\",null,{}]]}],[\"$\",\"body\",null,{\"className\":\"__className_f367f3\",\"style\":{\"background\":\"#eee\"},\"children\":[\"$\",\"$L13\",null,{\"children\":[\"$\",\"$L14\",null,{\"theme\":{\"primaryColor\":\"violet\",\"colors\":{\"violet\":[\"#f3e8fd\",\"#e0cffe\",\"#c9a9fc\",\"#b387f9\",\"#9a63f4\",\"#8250ee\",\"#6a3ed9\",\"#673ab7\",\"#4b0ba6\",\"#3a007d\"]}},\"children\":[[\"$\",\"$L15\",null,{}],[\"$\",\"$L16\",null,{\"children\":[\"$\",\"$L17\",null,{\"children\":[\"$\",\"$La\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}]}]]}]}]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L18\"],\"globalErrorComponent\":\"$19\",\"missingSlots\":\"$W1a\"}]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"f:E{\"digest\":\"NEXT_NOT_FOUND\"}\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"18:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"DK Carteiras\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Gerenciador de carteiras estudantis\"}],[\"$\",\"meta\",\"4\",{\"name\":\"next-size-adjust\"}]]\ne:null\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"1b:I[72972,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"7648\",\"static/chunks/7648-510a0a66e9dde937.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"1713\",\"static/chunks/1713-2339885fbce94949.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"7702\",\"static/chunks/app/dashboard/page-521dc3ac4b8cd093.js\"],\"\"]\n1c:I[74188,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"7648\",\"static/chunks/7648-510a0a66e9dde937.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"1388\",\"static/chunks/1388-9b152e0af54bcc56.js\",\"7663\",\"static/chunks/app/dashboard/layout-70d6230cd883484e.js\"],\"default\"]\n10:[\"$\",\"header\",null,{\"className\":\"flex justify-between bg-violet-700 items-center px-4 sticky top-0 h-14 z-10\",\"children\":[[\"$\",\"$L1b\",null,{\"href\":\"/dashboard\",\"className\":\"no-underline\",\"children\":[\"$\",\"div\",null,{\"className\":\"text-white flex gap-2 items-center \",\"children\":[[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"tabler-icon tabler-icon-id w-5 h-5\",\"children\":[\"$undefined\",[\"$\",\"path\",\"svg-0\",{\"d\":\"M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z\"}],[\"$\",\"path\",\"svg-1\",{\"d\":\"M9 10m-2 0a2 2 0 1 0 4 0a2"])
+  </script>
+  <script>
+   self.__next_f.push([1," 2 0 1 0 -4 0\"}],[\"$\",\"path\",\"svg-2\",{\"d\":\"M15 8l2 0\"}],[\"$\",\"path\",\"svg-3\",{\"d\":\"M15 12l2 0\"}],[\"$\",\"path\",\"svg-4\",{\"d\":\"M7 16l10 0\"}],\"$undefined\"]}],[\"$\",\"h3\",null,{\"className\":\"text-white\",\"children\":\"DK Carteiras\"}]]}]}],[\"$\",\"$L1c\",null,{\"name\":\"DCE\",\"email\":\"dce@restinga.ifrs.edu.br\"}]]}]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"1d:I[82904,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"8708\",\"static/chunks/4f298cb9-532812d318135373.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"1713\",\"static/chunks/1713-2339885fbce94949.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"6002\",\"static/chunks/6002-e47d3bec2b8a6a60.js\",\"8625\",\"static/chunks/8625-a2dcb40883a2cae8.js\",\"1817\",\"static/chunks/app/dashboard/(admin)/carteiras/%5BentityUrl%5D/@tableCarteiras/page-16b53277645045d6.js\"],\"Title\"]\n1e:I[35580,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"8708\",\"static/chunks/4f298cb9-532812d318135373.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"6681\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"1713\",\"static/chunks/1713-2339885fbce94949.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"6002\",\"static/chunks/6002-e47d3bec2b8a6a60.js\",\"8625\",\"static/chunks/8625-a2dcb40883a2cae8.js\",\"1817\",\"static/chunks/app/dashboard/(admin)/carteiras/%5BentityUrl%5D/@tableCarteiras/page-16b53277645045d6.js\"],\"Anchor\"]\n1f:I[24702,[\"5501\",\"static/chunks/c16f53c3-3735910adfca5295.js\",\"5878\",\"static/chunks/9da6db1e-8779523e65f375b8.js\",\"8708\",\"static/chunks/4f298cb9-532812d318135373.js\",\"4231\",\"static/chunks/4231-c8c686ae07d2aaec.js\",\"1469\",\"static/chunks/1469-bc091815582ebc06.js\",\"2832\",\"static/chunks/2832-d34298616565839d.js\",\"66"])
+  </script>
+  <script>
+   self.__next_f.push([1,"81\",\"static/chunks/6681-6d6202734f00c3be.js\",\"3129\",\"static/chunks/3129-a5b5fbcaa6798734.js\",\"9295\",\"static/chunks/9295-16bded82b8cfe0e2.js\",\"9763\",\"static/chunks/9763-c0868485453b17cf.js\",\"5230\",\"static/chunks/5230-505cde8c86476443.js\",\"1713\",\"static/chunks/1713-2339885fbce94949.js\",\"8795\",\"static/chunks/8795-68b965c142f3f0c8.js\",\"6002\",\"static/chunks/6002-e47d3bec2b8a6a60.js\",\"8625\",\"static/chunks/8625-a2dcb40883a2cae8.js\",\"1817\",\"static/chunks/app/dashboard/(admin)/carteiras/%5BentityUrl%5D/@tableCarteiras/page-16b53277645045d6.js\"],\"default\"]\nd:[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L1d\",null,{\"order\":3,\"className\":\"mb-4\",\"children\":[\"DCE IFRS Restinga\",\" - \",\"Diretório Central de Estudantes Livre - Sarah Domingues do IFRS Restinga\",\" (\",[\"$\",\"$L1e\",null,{\"href\":\"https://meiaentradaestudantil.com.br/dce_ifrs_restinga\",\"children\":\"Visitar site\"}],\")\"]}],[\"$\",\"$L1f\",null,{\"entityId\":183}]]}]\n"])
+  </script>
+  <div data-portal="true">
+   <div class="m_b37d9ac7 mantine-Notifications-root" data-position="top-center" style="--notifications-z-index: 400; --notifications-container-width: calc(27.5rem * var(--mantine-scale));">
+    <div>
+    </div>
+   </div>
+   <div class="m_b37d9ac7 mantine-Notifications-root" data-position="top-left" style="--notifications-z-index: 400; --notifications-container-width: calc(27.5rem * var(--mantine-scale));">
+    <div>
+    </div>
+   </div>
+   <div class="m_b37d9ac7 mantine-Notifications-root width-before-scroll-bar" data-position="top-right" style="--notifications-z-index: 400; --notifications-container-width: calc(27.5rem * var(--mantine-scale));">
+    <div>
+    </div>
+   </div>
+   <div class="m_b37d9ac7 mantine-Notifications-root width-before-scroll-bar" data-position="bottom-right" style="--notifications-z-index: 400; --notifications-container-width: calc(27.5rem * var(--mantine-scale));">
+    <div>
+    </div>
+   </div>
+   <div class="m_b37d9ac7 mantine-Notifications-root" data-position="bottom-left" style="--notifications-z-index: 400; --notifications-container-width: calc(27.5rem * var(--mantine-scale));">
+    <div>
+    </div>
+   </div>
+   <div class="m_b37d9ac7 mantine-Notifications-root" data-position="bottom-center" style="--notifications-z-index: 400; --notifications-container-width: calc(27.5rem * var(--mantine-scale));">
+    <div>
+    </div>
+   </div>
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+  </div>
+  <div data-portal="true">
+   <div class="m_38a85659 mantine-Popover-dropdown m_88b62a41 mantine-Select-dropdown" data-composed="true" data-position="top" role="presentation" style="display: none; z-index: 300; top: 858px; left: 1042.84375px; width: 80px;">
+    <div class="m_b2821a6e mantine-Select-options" id="mantine-537djtdh1" role="listbox">
+     <div class="" style="display: flex; overflow: auto; max-height: calc(13.75rem * var(--mantine-scale));">
+      <div class="" style="display: flex; flex-direction: column; flex: 1 1 0%;">
+       <div class="m_d57069b5 mantine-ScrollArea-root" style="--scrollarea-scrollbar-size: var(--combobox-padding); --sa-corner-width: 0px; --sa-corner-height: 0px;">
+        <div class="m_c0783ff9 mantine-ScrollArea-viewport" data-offset-scrollbars="y" data-scrollbars="xy" style="overflow: scroll;">
+         <div style="min-width: 100%;">
+          <div aria-selected="false" class="m_92253aa5 mantine-Select-option m_390b5f4" data-combobox-option="true" id=":rd:" role="option" value="5">
+           <span>
+            5
+           </span>
+          </div>
+          <div aria-selected="true" class="m_92253aa5 mantine-Select-option m_390b5f4" data-checked="true" data-combobox-active="true" data-combobox-option="true" id=":rf:" role="option" value="10">
+           <svg aria-hidden="true" class="m_8ee53fc2" fill="none" viewbox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M4 4.586L1.707 2.293A1 1 0 1 0 .293 3.707l3 3a.997.997 0 0 0 1.414 0l5-5A1 1 0 1 0 8.293.293L4 4.586z" fill="currentColor" fill-rule="evenodd">
+            </path>
+           </svg>
+           <span>
+            10
+           </span>
+          </div>
+          <div aria-selected="false" class="m_92253aa5 mantine-Select-option m_390b5f4" data-combobox-option="true" id=":rh:" role="option" value="15">
+           <span>
+            15
+           </span>
+          </div>
+          <div aria-selected="false" class="m_92253aa5 mantine-Select-option m_390b5f4" data-combobox-option="true" id=":rj:" role="option" value="20">
+           <span>
+            20
+           </span>
+          </div>
+          <div aria-selected="false" class="m_92253aa5 mantine-Select-option m_390b5f4" data-combobox-option="true" id=":rl:" role="option" value="25">
+           <span>
+            25
+           </span>
+          </div>
+          <div aria-selected="false" class="m_92253aa5 mantine-Select-option m_390b5f4" data-combobox-option="true" id=":rn:" role="option" value="30">
+           <span>
+            30
+           </span>
+          </div>
+          <div aria-selected="false" class="m_92253aa5 mantine-Select-option m_390b5f4" data-combobox-option="true" id=":rp:" role="option" value="50">
+           <span>
+            50
+           </span>
+          </div>
+          <div aria-selected="false" class="m_92253aa5 mantine-Select-option m_390b5f4" data-combobox-option="true" id=":rr:" role="option" value="100">
+           <span>
+            100
+           </span>
+          </div>
+         </div>
+        </div>
+        <div class="m_c44ba933 mantine-ScrollArea-scrollbar" data-mantine-scrollbar="true" data-orientation="horizontal" data-state="hidden" style="position: absolute; --sa-thumb-width: 18px;">
+        </div>
+        <div class="m_c44ba933 mantine-ScrollArea-scrollbar" data-mantine-scrollbar="true" data-orientation="vertical" data-state="hidden" style="position: absolute; --sa-thumb-height: 18px;">
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <next-route-announcer style="position: absolute;">
+  </next-route-announcer>
+ </body>
+</html>
