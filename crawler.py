@@ -1,8 +1,9 @@
+import json 
+from os import system
+from datetime import datetime
 from playwright.sync_api import sync_playwright
 from playwright._impl._errors import TimeoutError
-import json 
 from bs4 import BeautifulSoup
-import requests
 
 
 
@@ -23,7 +24,13 @@ def clear_cookies():
     return filtered_session
 
 
-def start_driver():
+
+def debug(content):
+    print(f'[{datetime.now().strftime("%H:%M:%S")}] > {content}')
+
+
+
+def start_driver(entity):
     
     # preliminar stuff starting those below
     global playwright, browser, context
@@ -37,34 +44,35 @@ def start_driver():
 
     page = context.new_page()
 
+    debug('Driver, context and page initialized.')
+
     # sometimes playwright just cant access for no reason so it has to be done 2 times
     try:
-        page.goto("https://admin-meia-entrada.netlify.app/dashboard/carteiras/dce_ifrs_restinga")
+        page.goto(f"https://admin-meia-entrada.netlify.app/dashboard/carteiras/{entity}")
     except:
-        page.goto("https://admin-meia-entrada.netlify.app/dashboard/carteiras/dce_ifrs_restinga")
+        page.goto(f"https://admin-meia-entrada.netlify.app/dashboard/carteiras/{entity}")
     
+    debug('URL resolved.')
+
     # goes to 'Em Produção' section of the page
-    # try: 
-    section_button = page.locator("button:has(span:has-text('Em Produção'))")
-    section_button.wait_for()
-    section_button.click()
-    rows_per_page = page.locator("main div div div div div div div:has(p:has-text('Rows per page')) div div input")
-    rows_per_page.click()
-    select_rows_number = page.locator('div div div div div div div div div[value="100"][data-combobox-option="true"]')
-    select_rows_number.click()
+    try: 
+        section_button = page.locator("button:has(span:has-text('Em Produção'))")
+        section_button.wait_for()
+        section_button.click()
+
+        rows_per_page = page.locator("main div div div div div div div:has(p:has-text('Rows per page')) div div input")
+        rows_per_page.click()
+
+        select_rows_number = page.locator('div div div div div div div div div[value="100"][data-combobox-option="true"]')
+        select_rows_number.click()
 
 
         # often this error occurs because the session cookies are expired
-    # except TimeoutError:
-    #     raise TimeoutError('You should try logging in again and updating your session cookies')
+    except TimeoutError as e:
+        raise TimeoutError(f'{e}\n\nYou should try logging in again and updating your session cookies')
 
-    # saves the state of the html
-    with open('page.html', 'w') as p:  
+    debug('Section accessed. Set to 100 rows visualization')
 
-        soup = BeautifulSoup(page.content(), "html.parser")
-        soup = soup.prettify()
-        p.write(soup)
-    
     return page
 
 
@@ -99,40 +107,68 @@ def download_dne_list(page):
         download_button = page.locator("button:has(span:has-text('BAIXAR TODAS '))")
         download_button.wait_for()
         download_button.click()
+        debug('Downloading DNE List... ')
 
-        page.wait_for_timeout(5000)
-        download_info.value.save_as("dne_list.pdf")
+        system('mkdir DNEs')
+        download_info.value.save_as("./DNEs/dne_list.pdf")
+        debug('Done.')
+        
 
 
 
 def get_email_info(page):
 
+    debug('Starting to get e-mail info. ')
     all_rows = page.locator('div table tbody tr').all()
+    email_info = {}
+    counter = 1
+
     for row in all_rows:
 
+        # playwright creates nth's in lots of 10, but when there is no next nth element, it just dont resolves
+        # so in general every click and wait for needs about 1000ms to resolve and if it delays more than 5s, it breaks the loop
         try:
             row.click(timeout=5000)
         except TimeoutError:
             break
 
+        # was needed to get the whole tag tree to crawl precisely to those elements
         div_has_name = page.locator("form div div div div:has(label:has-text('Nome'))")
         name = div_has_name.locator("div input[placeholder='Nome']").get_attribute('value')
 
         div_has_email = page.locator("form div div div div:has(label:has-text('Email'))")
         email = div_has_email.locator("div input[placeholder='Email']").get_attribute('value')
 
-        print(f'{name}, {email}')
+        email_info[name] = email
 
+        # closes the window of detailed info
         close_detailed_info_button = page.locator("div section header button:has(svg)")
         close_detailed_info_button.click()
+        debug(f'Gotten email info no. {counter}')
+        
+        counter += 1
+
+    return email_info
+
+
+
+def save_html_state(page):
+
+    with open('page.html', 'w') as p:  
+
+        soup = BeautifulSoup(page.content(), "html.parser")
+        soup = soup.prettify()
+        p.write(soup)
+    
 
 
 
 def main():
 
-    page = start_driver()
+    page = start_driver('dce_ifrs_restinga')
+    download_dne_list(page)
     get_email_info(page)
-
+    save_html_state(page)
     close_all(page)
 
 
