@@ -26,7 +26,7 @@ def extract_dnes_from_list():
         with open(f"./DNEs/{name_from_dne}.pdf", "wb") as file:
             dne.write(file)
         
-        debug('Done extracting and renaming DNEs from list.')
+debug('Done extracting and renaming DNEs from list.')
 
 
 
@@ -38,4 +38,5 @@ def delete_all_temp_files():
 
 
 if __name__ == "__main__":
+    
     extract_dnes_from_list()

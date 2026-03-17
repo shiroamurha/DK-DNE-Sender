@@ -26,7 +26,7 @@ def clear_cookies():
 
 
 
-def start_driver(entity):
+def start_driver(entity, hide_page):
     
     # preliminar stuff starting those below
     global playwright, browser, context
@@ -34,7 +34,7 @@ def start_driver(entity):
     session = clear_cookies()
 
     playwright = sync_playwright().start() 
-    browser = playwright.webkit.launch()
+    browser = playwright.webkit.launch(headless=hide_page)
     context = browser.new_context()
     context.add_cookies(session)
 
@@ -62,7 +62,7 @@ def start_driver(entity):
         select_rows_number = page.locator('div div div div div div div div div[value="100"][data-combobox-option="true"]')
         select_rows_number.click()
 
-
+        page.wait_for_timeout(2000)
         # often this error occurs because the session cookies are expired
     except TimeoutError as e:
         raise TimeoutError(f'{e}\n\nYou should try logging in again and updating your session cookies')
@@ -159,7 +159,7 @@ def save_html_state(page):
 
 def main():
 
-    page = start_driver('dce_ifrs_restinga')
+    page = start_driver('dce_ifrs_restinga', False)
     download_dne_list(page)
     get_email_info(page)
     #save_html_state(page)
