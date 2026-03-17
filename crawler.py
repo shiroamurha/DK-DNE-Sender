@@ -1,6 +1,6 @@
 import json 
 from os import system
-from datetime import datetime
+from utils import debug
 from playwright.sync_api import sync_playwright
 from playwright._impl._errors import TimeoutError
 from bs4 import BeautifulSoup
@@ -23,10 +23,6 @@ def clear_cookies():
 
     return filtered_session
 
-
-
-def debug(content):
-    print(f'[{datetime.now().strftime("%H:%M:%S")}] > {content}')
 
 
 
@@ -111,8 +107,7 @@ def download_dne_list(page):
 
         system('mkdir DNEs')
         download_info.value.save_as("./DNEs/dne_list.pdf")
-        debug('Done.')
-        
+        debug('Done.')     
 
 
 
@@ -162,13 +157,12 @@ def save_html_state(page):
     
 
 
-
 def main():
 
     page = start_driver('dce_ifrs_restinga')
     download_dne_list(page)
     get_email_info(page)
-    save_html_state(page)
+    #save_html_state(page)
     close_all(page)
 
 
