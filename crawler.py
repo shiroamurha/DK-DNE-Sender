@@ -100,8 +100,12 @@ def download_dne_list(page):
 
     with page.expect_download() as download_info:
 
+        keep_background_checkbox = page.locator("div:has(div:has(label:has-text('Imprimir com fundo'))) div input[type='checkbox']").last
+        keep_background_checkbox.wait_for()
+
         download_button = page.locator("button:has(span:has-text('BAIXAR TODAS '))")
-        download_button.wait_for()
+
+        keep_background_checkbox.click()
         download_button.click()
         debug('Downloading DNE List... ')
 
@@ -142,7 +146,7 @@ def get_email_info(page):
         debug(f'Gotten email info no. {counter}')
         
         counter += 1
-
+        print(f'{name}, {email}')
     return email_info
 
 
@@ -159,7 +163,7 @@ def save_html_state(page):
 
 def main():
 
-    page = start_driver('dce_ifrs_restinga', False)
+    page = start_driver('dce_ifrs_restinga', hide_page=True)
     download_dne_list(page)
     get_email_info(page)
     #save_html_state(page)
