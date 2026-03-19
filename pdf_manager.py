@@ -7,6 +7,7 @@ from shutil import rmtree
 
 def extract_dnes_from_list():
 
+    all_filenames_list = []
     dne_list = PdfReader("./DNEs/dne_list.pdf")
 
     for i, page in enumerate(dne_list.pages):
@@ -26,19 +27,19 @@ def extract_dnes_from_list():
     
             # 5th line from the text, replaces all spaces for nothing and makes all uppercase. ex.: 'JOAODASILVA'
             name_from_dne = text_from_dne.split('\n')[5].replace(' ', '').upper()
+            all_filenames_list.append(name_from_dne)
 
             with open(f"./DNEs/{name_from_dne}.pdf", "wb") as file:
                 dne.write(file)
         
     debug('Done extracting and renaming DNEs from list.')
+    return all_filenames_list
 
 
 
-
-def delete_all_temp_files():
+def delete_all_dnes():
     rmtree(r'./DNEs')
     debug('All DNEs deleted.')
-
 
 
 

@@ -1,28 +1,9 @@
 import json 
 from os import system
-from utils import debug
+from utils import debug, clear_cookies
 from playwright.sync_api import sync_playwright
 from playwright._impl._errors import TimeoutError
 from bs4 import BeautifulSoup
-
-
-
-def clear_cookies():
-
-    raw_cookies = json.load(open('../dk_dne_session.json', 'r'))
-    filtered_session = []
-
-    for item in raw_cookies:
-        keys = list(item.keys()).copy()
-        for line in keys:
-            if line not in ['name', 'value', 'domain', 'path']:
-                del item[line]
-    filtered_session = raw_cookies
-
-    json.dump(filtered_session, open('../dk_dne_session.json', 'w'), indent=4)
-
-    return filtered_session
-
 
 
 
@@ -146,7 +127,7 @@ def get_email_info(page):
         debug(f'Gotten email info no. {counter}')
         
         counter += 1
-        print(f'{name}, {email}')
+        #print(f'{name}, {email}')
     return email_info
 
 
@@ -161,15 +142,17 @@ def save_html_state(page):
     
 
 
-def main():
+def crawl():
 
-    page = start_driver('dce_ifrs_restinga', hide_page=False)
+    page = start_driver('dce_ifrs_restinga', hide_page=True)
     download_dne_list(page)
-    get_email_info(page)
+    email_info = get_email_info(page)
     #save_html_state(page)
     close_all(page)
+
+    return email_info
 
 
 
 if __name__ == "__main__":
-    main()
+    crawl()
