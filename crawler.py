@@ -163,7 +163,7 @@ def save_html_state(page):
 
 def main():
 
-    page = start_driver('dce_ifrs_restinga', hide_page=True)
+    page = start_driver('dce_ifrs_restinga', hide_page=False)
     download_dne_list(page)
     get_email_info(page)
     #save_html_state(page)
