@@ -2,6 +2,7 @@ from pypdf import PdfReader, PdfWriter
 from io import BytesIO
 from utils import debug
 from shutil import rmtree
+from os import remove
 
 
 
@@ -37,6 +38,12 @@ def extract_dnes_from_list():
 
 
 
+def del_dne(filename):
+    remove(filename)
+    debug(f'Removed {filename}')
+
+
+
 def delete_all_dnes():
     rmtree(r'./DNEs')
     debug('All DNEs deleted.')
@@ -45,4 +52,4 @@ def delete_all_dnes():
 
 if __name__ == "__main__":
     
-    extract_dnes_from_list()
+    del_dne('./DNEs/dne_list.pdf')

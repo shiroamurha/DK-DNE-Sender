@@ -8,12 +8,13 @@ def send_dne_by_email(email, name, filename):
 
     filename += '.pdf'
 
-    with open('p.txt', 'r') as p:
-        password = p.read()
+    with open('./static/p.txt', 'r') as p:
+        password = p.read().split('\n')[1]
 
     msg = EmailMessage()
     msg['Subject'] = 'DNE digital gerada :D'
-    msg['From'] = 'entregadordedne.dceifrestinga@gmail.com'
+    msg['From'] = 'dce@restinga.ifrs.edu.br'
+#    msg['From'] = 'entregadordedne.dceifrestinga@gmail.com'
     msg['To'] = email
     msg["Reply-To"] = "dce@restinga.ifrs.edu.br"
 
@@ -38,7 +39,8 @@ def send_dne_by_email(email, name, filename):
 
     # Enviar (exemplo com SMTP do Gmail)
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login('entregadordedne.dceifrestinga@gmail.com', password)
+        #smtp.login('entregadordedne.dceifrestinga@gmail.com', password)
+        smtp.login('2023009548@aluno.restinga.ifrs.edu.br', password)
         smtp.send_message(msg)
 
     debug(f'Sent to {name} ({email})')

@@ -4,13 +4,15 @@ import json
 
 
 def debug(content):
-    print(f'[{datetime.now().strftime("%H:%M:%S")}] > {content}')
+    time = datetime.now()
+    print(f'[{time.strftime("%H:%M:%S")}] > {content}')
+    return time
 
 
 
 def clear_cookies():
 
-    raw_cookies = json.load(open('../dk_dne_session.json', 'r'))
+    raw_cookies = json.load(open('./static/session.json', 'r'))
     filtered_session = []
 
     for item in raw_cookies:
@@ -20,7 +22,7 @@ def clear_cookies():
                 del item[line]
     filtered_session = raw_cookies
 
-    json.dump(filtered_session, open('../dk_dne_session.json', 'w'), indent=4)
+    json.dump(filtered_session, open('./static/session.json', 'w'), indent=4)
 
     return filtered_session
 
@@ -39,5 +41,26 @@ def get_key_by_value(dict, value):
         
 
 
-def log_what_was_done(dict):
-    pass # todo: set all info of the dnes sent
+def logger(logs, filenames_list, emails_to_notify):
+
+    for filename in filenames_list:
+        if filename not in logs[0]['already_sent_dnes']:
+            logs[0]['already_sent_dnes'].append(filename)
+    
+    single_string_emails = ''
+    for email in emails_to_notify:
+        single_string_emails += f'{email}, '
+        
+    logs[0]['emails_to_notify'] = single_string_emails
+
+    update_logs(logs)
+
+
+
+def get_logs():
+    return json.load(open('./static/logs.json', 'r'))
+
+
+
+def update_logs(logs):
+    json.dump(logs, open('./static/logs.json', 'w'), indent=4)
