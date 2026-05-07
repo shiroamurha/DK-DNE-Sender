@@ -5,12 +5,12 @@ from utils import *
 
 
 
-def main():
+def main(show_page=False, show_all_emails=False):
 
     start = debug('========================== STARTING DK DNE SENDER ==========================')
 
     debug('Starting CRAWLER')
-    name_to_email = crawler.crawl()
+    name_to_email = crawler.crawl(show_page)
 
     filename_to_email = {}
 
@@ -22,6 +22,7 @@ def main():
     all_emails_sent_to = []
     
     logs = get_logs()
+    all_emails = ''
 
     for filename in all_filenames_list:
 
@@ -33,15 +34,24 @@ def main():
             email_sender.send_dne_by_email(email_to_send, name_to_send, filename)
             debug(f'Nome: {name_to_send} - email {email_to_send} - arquivo: {filename}')
             all_emails_sent_to.append(email_to_send)
-            #break
+
+        if show_all_emails:
+            all_emails += filename_to_email.get(filename[:15]) + ', '
+
             
     logger(logs, all_filenames_list, all_emails_sent_to)
     
     pdf_manager.delete_all_dnes()
     
+    if show_all_emails:
+        print(all_emails)
+
     end = debug('=============== END - ALL DONE SUCCESSFUL ===============')
     debug(f'SCRIPT TOTAL DURATION: {str((end - start).total_seconds())[:-4]} seconds')
 
+
+
+
 if __name__ == "__main__":
-    main()
+    main(show_page=False, show_all_emails=True)
     

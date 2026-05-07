@@ -43,7 +43,7 @@ def start_driver(entity, hide_page):
         select_rows_number = page.locator('div div div div div div div div div[value="100"][data-combobox-option="true"]')
         select_rows_number.click()
 
-        page.wait_for_timeout(2000)
+        page.wait_for_timeout(5000)
         # often this error occurs because the session cookies are expired
     except TimeoutError as e:
         raise TimeoutError(f'{e}\n\nYou should try logging in again and updating your session cookies')
@@ -81,12 +81,14 @@ def download_dne_list(page):
 
     with page.expect_download() as download_info:
 
-        keep_background_checkbox = page.locator("div:has(div:has(label:has-text('Imprimir com fundo'))) div input[type='checkbox']").last
+        keep_background_checkbox = page.locator("div:has(div:has(label:has-text('Com fundo (carteira digital)'))) div input[type='checkbox']")
+        keep_background_checkbox = keep_background_checkbox.nth(keep_background_checkbox.count() - 2)
         keep_background_checkbox.wait_for()
 
         download_button = page.locator("button:has(span:has-text('BAIXAR TODAS '))")
 
         keep_background_checkbox.click()
+        #print(keep_background_checkbox.text_content)
         download_button.click()
         debug('Downloading DNE List... ')
 
@@ -142,9 +144,10 @@ def save_html_state(page):
     
 
 
-def crawl():
+def crawl(show_page):
 
-    page = start_driver('dce_ifrs_restinga', hide_page=True)
+    show_page = not show_page
+    page = start_driver('dce_ifrs_restinga', hide_page=show_page)
     download_dne_list(page)
     email_info = get_email_info(page)
     #save_html_state(page)
@@ -155,4 +158,4 @@ def crawl():
 
 
 if __name__ == "__main__":
-    crawl()
+    crawl(show_page=True)
